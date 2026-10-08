@@ -1,8 +1,9 @@
 {
   "name": "vscode-ai-undo",
   "displayName": "AI Undo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "MrSkele",
+  "icon": "icon.png",
   "description": "Ctrl+Z for your AI agent: 1-click snapshot & rollback for Claude, Cursor, Copilot and Antigravity",
   "author": "MrSkele & Antigravity",
   "license": "MIT",
