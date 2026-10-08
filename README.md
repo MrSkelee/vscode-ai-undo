@@ -35,6 +35,30 @@ Unlike naive `git stash` or file backups, AI Undo tackles the 3 real failure mod
 
 ---
 
+## 📦 Installation
+
+[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/MrSkele.vscode-ai-undo?color=blue&label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=MrSkele.vscode-ai-undo)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+### Option 1: Directly inside VS Code / Antigravity IDE (Recommended)
+1. Open the Extensions tab in VS Code (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+2. Search for **`AI Undo`** (Publisher: **`MrSkele`**).
+3. Click **Install**.
+
+Or run directly from your terminal:
+```bash
+code --install-extension MrSkele.vscode-ai-undo
+```
+
+### Option 2: Zero-Install Standalone CLI
+Run instantly inside any project terminal without installing anything:
+```bash
+npx ai-undo save
+npx ai-undo rollback
+```
+
+---
+
 ## 🚀 Quickstart
 
 ### In VS Code & Antigravity IDE
