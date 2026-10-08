@@ -37,7 +37,7 @@ Unlike naive `git stash` or file backups, AI Undo tackles the 3 real failure mod
 
 ## 📦 Installation
 
-[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/MrSkele.vscode-ai-undo?color=blue&label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=MrSkele.vscode-ai-undo)
+[![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Code%20Marketplace-v1.0.1-007ACC?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=MrSkele.vscode-ai-undo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ### Option 1: Directly inside VS Code / Antigravity IDE (Recommended)
