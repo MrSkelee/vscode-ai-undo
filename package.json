@@ -37,7 +37,10 @@
     "vscode": "^1.85.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+    "onCommand:ai-undo.saveCheckpoint",
+    "onCommand:ai-undo.rollback",
+    "onCommand:ai-undo.showDiff"
   ],
   "contributes": {
     "commands": [
