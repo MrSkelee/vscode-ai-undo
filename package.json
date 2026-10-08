@@ -1,0 +1,84 @@
+{
+  "name": "vscode-ai-undo",
+  "displayName": "AI Undo",
+  "version": "1.0.0",
+  "publisher": "MrSkele",
+  "description": "Ctrl+Z for your AI agent: 1-click snapshot & rollback for Claude, Cursor, Copilot and Antigravity",
+  "author": "MrSkele & Antigravity",
+  "license": "MIT",
+  "homepage": "https://github.com/MrSkelee/vscode-ai-undo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrSkelee/vscode-ai-undo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrSkelee/vscode-ai-undo/issues"
+  },
+  "keywords": [
+    "ai",
+    "undo",
+    "rollback",
+    "checkpoint",
+    "cursor",
+    "claude",
+    "copilot",
+    "agent",
+    "safety"
+  ],
+  "categories": [
+    "Other",
+    "SCM Providers"
+  ],
+  "main": "./dist/extension.js",
+  "bin": {
+    "ai-undo": "./bin/ai-undo.js"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-undo.saveCheckpoint",
+        "title": "AI Undo: Save Checkpoint",
+        "icon": "$(camera)"
+      },
+      {
+        "command": "ai-undo.rollback",
+        "title": "AI Undo: Rollback to Checkpoint",
+        "icon": "$(history)"
+      },
+      {
+        "command": "ai-undo.showDiff",
+        "title": "AI Undo: View Changes Since Checkpoint",
+        "icon": "$(diff)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ai-undo.saveCheckpoint",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s"
+      },
+      {
+        "command": "ai-undo.rollback",
+        "key": "ctrl+alt+z",
+        "mac": "cmd+alt+z"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "node --no-warnings --test test/engine.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.7.3"
+  }
+}

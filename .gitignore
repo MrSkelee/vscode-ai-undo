@@ -1,0 +1,7 @@
+node_modules/
+dist/
+out/
+.ai-undo/
+test-sandbox/
+*.vsix
+.DS_Store
